@@ -148,7 +148,7 @@ Qualtrics.SurveyEngine.addOnReady(function()
 		var filename = "${e://Field/random_id}" + "-" + sen.getAttribute("data-sen-id");
 		fd.append("audio_data", blobHolder, filename);
 		console.log("submit blob: ", blobHolder);
-		xhr.open("POST", "https://www.ocf.berkeley.edu/~cynthiazz/upload.php", true);
+		xhr.open("POST", "YOUR_SERVER_ADDRESS", true);
 		xhr.send(fd);
 
 		// reset submit button
